@@ -1,3 +1,4 @@
+import setuptools
 with open("README.md","r",encoding="utf-8") as f:
     log_description = f.read()
     
@@ -10,7 +11,8 @@ AUTHOR_EMAIL = "basanthsk@gmail.com"
 
 
 setuptools.setup(
-    name = __version__,
+    name = SRC_REPO,
+    version = __version__,
     author = AUTHOR_USER_NAME,
     author_email = AUTHOR_EMAIL,
     description = "A pythn package for chicken disease calssification",
