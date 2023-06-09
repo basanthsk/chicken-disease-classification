@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: chickenClassifier
 Version: 0.0.0
-Summary: A pythn package for chicken disease calssification
+Summary: A python package for chicken disease calssification
 Home-page: https://github.com/Basanth/chicken-disease-classification
 Author: Basanth
 Author-email: basanthsk@gmail.com

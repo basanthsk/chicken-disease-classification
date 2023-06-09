@@ -1,0 +1,670 @@
+[2023-06-06 23:57:40,297: INFO: main: welcome to my custom log]
+[2023-06-08 21:22:16,020: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-08 21:22:16,026: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-08 21:22:16,031: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-08 21:22:16,033: ERROR: main: "'ConfigBox' object has no attribute 'artifacts_root'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'artifacts_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'artifacts_root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'artifacts_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'artifacts_root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'artifacts_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'artifacts_root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'artifacts_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\config\configuration.py", line 11, in __init__
+    create_directories([self.config.artifacts_root])
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'artifacts_root'"
+[2023-06-08 21:23:33,105: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-08 21:23:33,109: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-08 21:23:33,110: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-08 21:23:33,112: INFO: common: created directory at: artifacts]
+[2023-06-08 21:23:33,114: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-08 21:23:33,115: ERROR: main: __init__() got an unexpected keyword argument 'source_URL']
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\config\configuration.py", line 18, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+TypeError: __init__() got an unexpected keyword argument 'source_URL'
+[2023-06-08 21:25:13,382: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-08 21:25:13,386: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-08 21:25:13,388: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-08 21:25:13,389: INFO: common: created directory at: artifacts]
+[2023-06-08 21:25:13,390: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-08 21:25:13,391: ERROR: main: 'DataIngestionConfig' object has no attribute 'sourceURL']
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\data_ingestion.py", line 19, in download_file
+    url = self.config.sourceURL,
+AttributeError: 'DataIngestionConfig' object has no attribute 'sourceURL'
+[2023-06-08 21:25:35,125: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-08 21:25:35,131: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-08 21:25:35,133: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-08 21:25:35,134: INFO: common: created directory at: artifacts]
+[2023-06-08 21:25:35,135: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-08 21:26:18,020: ERROR: main: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>]
+Traceback (most recent call last):
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\urllib\request.py", line 1354, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\http\client.py", line 1256, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\http\client.py", line 1302, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\http\client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\http\client.py", line 1011, in _send_output
+    self.send(msg)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\http\client.py", line 951, in send
+    self.connect()
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\http\client.py", line 1418, in connect
+    super().connect()
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\http\client.py", line 922, in connect
+    self.sock = self._create_connection(
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\socket.py", line 808, in create_connection
+    raise err
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\socket.py", line 796, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\data_ingestion.py", line 18, in download_file
+    filename, headers = request.urlretrieve(
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\urllib\request.py", line 247, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\urllib\request.py", line 531, in open
+    response = meth(req, response)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\urllib\request.py", line 640, in http_response
+    response = self.parent.error(
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\urllib\request.py", line 563, in error
+    result = self._call_chain(*args)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\urllib\request.py", line 502, in _call_chain
+    result = func(*args)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\urllib\request.py", line 755, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\urllib\request.py", line 542, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\urllib\request.py", line 502, in _call_chain
+    result = func(*args)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\urllib\request.py", line 1397, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\urllib\request.py", line 1357, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>
+[2023-06-09 01:43:20,551: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-09 01:43:20,556: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-09 01:43:20,560: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-09 01:43:20,561: INFO: common: created directory at: artifacts]
+[2023-06-09 01:43:20,562: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-09 01:43:20,562: ERROR: main: "'ConfigBox' object has no attribute 'local_data_file'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'local_data_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'local_data_file'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'local_data_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'local_data_file'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'local_data_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'local_data_file'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'local_data_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\config\configuration.py", line 21, in get_data_ingestion_config
+    local_data_file=config.local_data_file,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'local_data_file'"
+[2023-06-09 01:44:17,428: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-09 01:44:17,432: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-09 01:44:17,435: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-09 01:44:17,436: INFO: common: created directory at: artifacts]
+[2023-06-09 01:44:17,443: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-09 01:44:17,459: ERROR: main: "'ConfigBox' object has no attribute 'saparate_files'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'saparate_files'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'saparate_files'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'saparate_files'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'saparate_files'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'saparate_files'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'saparate_files'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'saparate_files'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\config\configuration.py", line 22, in get_data_ingestion_config
+    unzip_dir=config.saparate_files
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'saparate_files'"
+[2023-06-09 01:45:13,586: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-09 01:45:13,593: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-09 01:45:13,595: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-09 01:45:13,596: INFO: common: created directory at: artifacts]
+[2023-06-09 01:45:13,597: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-09 01:45:13,597: ERROR: main: "'ConfigBox' object has no attribute 'saparate_files'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'saparate_files'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'saparate_files'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'saparate_files'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'saparate_files'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'saparate_files'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'saparate_files'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'saparate_files'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\config\configuration.py", line 22, in get_data_ingestion_config
+    saparate_files=config.saparate_files
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'saparate_files'"
+[2023-06-09 01:45:45,314: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-09 01:45:45,318: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-09 01:45:45,320: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-09 01:45:45,321: INFO: common: created directory at: artifacts]
+[2023-06-09 01:45:45,322: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-09 01:45:45,323: ERROR: main: "'ConfigBox' object has no attribute 'saparate_files'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'saparate_files'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'saparate_files'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'saparate_files'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'saparate_files'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'saparate_files'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'saparate_files'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'saparate_files'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\config\configuration.py", line 22, in get_data_ingestion_config
+    saparate_files=config.saparate_files
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'saparate_files'"
+[2023-06-09 01:46:02,838: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-09 01:46:02,842: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-09 01:46:02,844: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-09 01:46:02,846: INFO: common: created directory at: artifacts]
+[2023-06-09 01:46:02,868: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-09 01:46:02,870: ERROR: main: name 'KaggleApi' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\data_ingestion.py", line 20, in download_file
+    api = KaggleApi()
+NameError: name 'KaggleApi' is not defined
+[2023-06-09 01:59:51,505: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-09 01:59:51,511: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-09 01:59:51,513: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-09 01:59:51,514: INFO: common: created directory at: artifacts]
+[2023-06-09 01:59:51,515: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-09 01:59:51,818: ERROR: main: Could not find kaggle.json. Make sure it's located in C:\Users\Zaban\.kaggle. Or use the environment method.]
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\data_ingestion.py", line 21, in download_file
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\kaggle\__init__.py", line 23, in <module>
+    api.authenticate()
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 164, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in C:\Users\Zaban\.kaggle. Or use the environment method.
+[2023-06-09 02:00:14,264: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-09 02:00:14,272: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-09 02:00:14,274: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-09 02:00:14,275: INFO: common: created directory at: artifacts]
+[2023-06-09 02:00:14,276: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-09 02:00:14,570: ERROR: main: Could not find kaggle.json. Make sure it's located in C:\Users\Zaban\.kaggle. Or use the environment method.]
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\data_ingestion.py", line 21, in download_file
+    from kaggle.api.kaggle_api_extended import KaggleApi
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\kaggle\__init__.py", line 23, in <module>
+    api.authenticate()
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 164, in authenticate
+    raise IOError('Could not find {}. Make sure it\'s located in'
+OSError: Could not find kaggle.json. Make sure it's located in C:\Users\Zaban\.kaggle. Or use the environment method.
+[2023-06-09 02:00:42,286: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-09 02:00:42,295: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-09 02:00:42,297: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-09 02:00:42,303: INFO: common: created directory at: artifacts]
+[2023-06-09 02:00:42,321: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-09 02:00:42,324: ERROR: main: str expected, not NoneType]
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\data_ingestion.py", line 21, in download_file
+    os.environ['KAGGLE_USERNAME'] = kaggle_username
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\os.py", line 680, in __setitem__
+    value = self.encodevalue(value)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\os.py", line 736, in check_str
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not NoneType
+[2023-06-09 02:01:18,949: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-09 02:01:18,953: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-09 02:01:18,956: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-09 02:01:18,958: INFO: common: created directory at: artifacts]
+[2023-06-09 02:01:18,983: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-09 02:01:19,011: ERROR: main: str expected, not NoneType]
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\data_ingestion.py", line 21, in download_file
+    os.environ['KAGGLE_USERNAME'] = kaggle_username
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\os.py", line 680, in __setitem__
+    value = self.encodevalue(value)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\os.py", line 736, in check_str
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not NoneType
+[2023-06-09 02:01:41,059: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-09 02:01:41,064: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-09 02:01:41,087: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-09 02:01:41,090: INFO: common: created directory at: artifacts]
+[2023-06-09 02:01:41,093: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-09 02:01:41,118: ERROR: main: str expected, not NoneType]
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\data_ingestion.py", line 21, in download_file
+    os.environ['KAGGLE_USERNAME'] = kaggle_username
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\os.py", line 680, in __setitem__
+    value = self.encodevalue(value)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\os.py", line 736, in check_str
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not NoneType
+[2023-06-09 02:02:07,004: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-09 02:02:07,013: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-09 02:02:07,017: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-09 02:02:07,018: INFO: common: created directory at: artifacts]
+[2023-06-09 02:02:07,030: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-09 02:02:07,078: ERROR: main: str expected, not NoneType]
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\data_ingestion.py", line 22, in download_file
+    os.environ['KAGGLE_USERNAME'] = kaggle_username
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\os.py", line 680, in __setitem__
+    value = self.encodevalue(value)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\os.py", line 736, in check_str
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not NoneType
+[2023-06-09 02:03:00,701: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-09 02:03:00,734: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-09 02:03:00,737: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-09 02:03:00,738: INFO: common: created directory at: artifacts]
+[2023-06-09 02:03:00,741: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-09 02:03:00,744: ERROR: main: str expected, not NoneType]
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\data_ingestion.py", line 23, in download_file
+    os.environ['KAGGLE_USERNAME'] = kaggle_username
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\os.py", line 680, in __setitem__
+    value = self.encodevalue(value)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\os.py", line 736, in check_str
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not NoneType
+[2023-06-09 02:04:13,779: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-09 02:04:13,783: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-09 02:04:13,786: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-09 02:04:13,789: INFO: common: created directory at: artifacts]
+[2023-06-09 02:04:13,795: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-09 02:04:13,807: ERROR: main: str expected, not NoneType]
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\data_ingestion.py", line 23, in download_file
+    os.environ['KAGGLE_USERNAME'] = kaggle_username
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\os.py", line 680, in __setitem__
+    value = self.encodevalue(value)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\os.py", line 736, in check_str
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not NoneType
+[2023-06-09 02:04:29,974: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-09 02:04:29,984: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-09 02:04:29,985: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-09 02:04:29,985: INFO: common: created directory at: artifacts]
+[2023-06-09 02:04:29,986: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-09 02:04:29,987: ERROR: main: str expected, not NoneType]
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\data_ingestion.py", line 23, in download_file
+    os.environ['KAGGLE_USERNAME'] = kaggle_username
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\os.py", line 680, in __setitem__
+    value = self.encodevalue(value)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\os.py", line 736, in check_str
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not NoneType
+[2023-06-09 02:09:05,076: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-09 02:09:05,081: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-09 02:09:05,084: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-09 02:09:05,102: INFO: common: created directory at: artifacts]
+[2023-06-09 02:09:05,109: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-09 02:09:05,157: ERROR: main: str expected, not NoneType]
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\data_ingestion.py", line 23, in download_file
+    os.environ['KAGGLE_USERNAME'] = kaggle_username
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\os.py", line 680, in __setitem__
+    value = self.encodevalue(value)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\os.py", line 736, in check_str
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not NoneType
+[2023-06-09 02:09:22,729: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-09 02:09:22,734: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-09 02:09:22,737: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-09 02:09:22,738: INFO: common: created directory at: artifacts]
+[2023-06-09 02:09:22,740: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-09 02:09:22,763: ERROR: main: name 'load_dotenv' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion = DataIngestion(config=data_ingestion_config)
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\data_ingestion.py", line 15, in __init__
+    load_dotenv()
+NameError: name 'load_dotenv' is not defined
+[2023-06-09 02:09:40,049: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-09 02:09:40,056: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-09 02:09:40,059: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-09 02:09:40,080: INFO: common: created directory at: artifacts]
+[2023-06-09 02:09:40,103: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-09 02:09:40,431: ERROR: main: name 'api' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\data_ingestion.py", line 28, in download_file
+    api.authenticate()
+NameError: name 'api' is not defined
+[2023-06-09 02:10:45,425: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-09 02:10:45,434: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-09 02:10:45,476: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-09 02:10:45,481: INFO: common: created directory at: artifacts]
+[2023-06-09 02:10:45,482: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-09 02:12:31,273: INFO: data_ingestion:  download data with kaggle!]
+[2023-06-09 02:12:31,320: ERROR: main: 'DataIngestionConfig' object has no attribute 'unzip_dir']
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.extract_zip_file()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\data_ingestion.py", line 36, in extract_zip_file
+AttributeError: 'DataIngestionConfig' object has no attribute 'unzip_dir'
+[2023-06-09 02:18:01,211: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-09 02:18:01,215: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-09 02:18:01,217: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-09 02:18:01,227: INFO: common: created directory at: artifacts]
+[2023-06-09 02:18:01,238: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-09 02:18:01,264: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-09 02:18:01,477: ERROR: main: 'DataIngestion' object has no attribute 'source_directory']
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.saparate_files()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\data_ingestion.py", line 45, in saparate_files
+    source_file_path = os.path.join(self.source_directory, filename)
+AttributeError: 'DataIngestion' object has no attribute 'source_directory'
+[2023-06-09 02:18:38,103: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-09 02:18:38,110: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-09 02:18:38,130: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-09 02:18:38,134: INFO: common: created directory at: artifacts]
+[2023-06-09 02:18:38,155: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-09 02:18:38,184: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-09 02:18:38,313: ERROR: main: name 'shutil' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.saparate_files()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\data_ingestion.py", line 47, in saparate_files
+    shutil.move(source_file_path, destination_file_path)
+NameError: name 'shutil' is not defined
+[2023-06-09 02:21:07,527: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-09 02:21:07,533: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-09 02:21:07,536: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-09 02:21:07,548: INFO: common: created directory at: artifacts]
+[2023-06-09 02:21:07,554: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-09 02:21:07,581: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-09 02:21:27,627: INFO: main: <<<<<<stage Data Ingestion stage completed >>>>>>>>>>
+
+x==============x]

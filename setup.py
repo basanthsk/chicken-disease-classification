@@ -1,6 +1,6 @@
 import setuptools
 with open("README.md","r",encoding="utf-8") as f:
-    log_description = f.read()
+    long_description = f.read()
     
 __version__ = "0.0.0"
 
@@ -15,8 +15,8 @@ setuptools.setup(
     version = __version__,
     author = AUTHOR_USER_NAME,
     author_email = AUTHOR_EMAIL,
-    description = "A pythn package for chicken disease calssification",
-    long_description =log_description,
+    description = "A python package for chicken disease calssification",
+    long_description =long_description,
     log_description_content = "text/markdown",
     url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
     project_urls = {
