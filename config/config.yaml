@@ -6,10 +6,14 @@ data_ingestion:
   download_dir: downloaded
   downloaded_files: downloaded/Train
   saparate_files: artifacts/data_ingestion
-  
-
 
 prepare_base_model:
   root_dir: artifacts/prepare_base_model
   base_model_path: artifacts/prepare_base_model/base_model.h5
-  updated_base_model: artifacts/prepare_base_model/base_model_updated.h5  
+  updated_base_model: artifacts/prepare_base_model/base_model_updated.h5 
+
+
+callbacks:
+  root_dir: artifacts/callbacks
+  tensorboard_root_log_dir: artifacts/callbacks/tensorboard_log_dir
+  ckeckpoint_model_filepath: artifacts/callbacks/checkpoint_dir/model.h5   

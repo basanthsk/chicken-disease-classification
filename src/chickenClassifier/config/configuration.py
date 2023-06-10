@@ -1,7 +1,9 @@
 from chickenClassifier.constants import * 
 from chickenClassifier.utils.common import read_yaml, create_directories
+import os
 from chickenClassifier.entity.config_entity import (DataIngestionConfig,
-                                                    PrepareBaseModelConfig)
+                                                    PrepareBaseModelConfig,
+                                                    CallbackConfig)
 
 class ConfigurationManager:
     def __init__(self,
@@ -44,5 +46,19 @@ class ConfigurationManager:
         
         return prepare_base_model_config
         
-            
+    def get_callback_config(self) -> CallbackConfig:
+        config = self.config.callbacks
+        model_ckpt_dir = os.path.dirname(config.checkpoint_model_filepath)
+        create_directories([
+            Path(model_ckpt_dir),
+             Path(config.tensorboard_root_log_dir)])
+        
+        callback_config = CallbackConfig(
+            root_dir = Path(config.root_dir),
+            tensorboard_root_log_dir = Path(config.tensorboard_root_log_dir),
+            checkpoint_model_filepath = Path(config.ckeckpoint_model_filepath)
+        )
+        
+        return callback_config
+                
     
