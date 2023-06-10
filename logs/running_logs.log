@@ -668,3 +668,168 @@ NameError: name 'shutil' is not defined
 [2023-06-09 02:21:27,627: INFO: main: <<<<<<stage Data Ingestion stage completed >>>>>>>>>>
 
 x==============x]
+[2023-06-10 10:05:28,860: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-10 10:05:28,970: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-10 10:05:29,008: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-10 10:05:29,011: INFO: common: created directory at: artifacts]
+[2023-06-10 10:05:29,013: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-10 10:05:29,062: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-10 10:05:29,063: INFO: main: <<<<<<stage Data Ingestion stage completed >>>>>>>>>>
+
+x==============x]
+[2023-06-10 10:05:29,102: INFO: main: >>>>>>> stage Prepare Base Model started<<<<<]
+[2023-06-10 10:05:29,112: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-10 10:05:29,148: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-10 10:05:29,150: INFO: common: created directory at: artifacts]
+[2023-06-10 10:05:29,152: ERROR: main: "'ConfigBox' object has no attribute 'prepare_base_model_config'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'prepare_base_model_config'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'prepare_base_model_config'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'prepare_base_model_config'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'prepare_base_model_config'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'prepare_base_model_config'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'prepare_base_model_config'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'prepare_base_model_config'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 22, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_02_prepare_base_model.py", line 13, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\config\configuration.py", line 30, in get_prepare_base_model_config
+    config = self.config.prepare_base_model_config
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'prepare_base_model_config'"
+[2023-06-10 10:35:40,437: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-10 10:35:40,536: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-10 10:35:40,541: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-10 10:35:40,543: INFO: common: created directory at: artifacts]
+[2023-06-10 10:35:40,544: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-10 10:35:40,574: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-10 10:35:40,575: INFO: main: <<<<<<stage Data Ingestion stage completed >>>>>>>>>>
+
+x==============x]
+[2023-06-10 10:35:40,578: INFO: main: >>>>>>> stage Prepare Base Model started<<<<<]
+[2023-06-10 10:35:40,621: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-10 10:35:40,630: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-10 10:35:40,631: INFO: common: created directory at: artifacts]
+[2023-06-10 10:35:40,661: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-10 10:35:40,666: ERROR: main: module 'keras.api._v2.keras' has no attribute 'application']
+Traceback (most recent call last):
+  File "main.py", line 22, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_02_prepare_base_model.py", line 15, in main
+    prepare_base_model.get_base_model()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\prepare_base_model.py", line 14, in get_base_model
+    self.model = tf.keras.application.vgg16.VGG16(
+AttributeError: module 'keras.api._v2.keras' has no attribute 'application'
+[2023-06-10 10:36:20,417: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-10 10:36:20,420: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-10 10:36:20,423: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-10 10:36:20,425: INFO: common: created directory at: artifacts]
+[2023-06-10 10:36:20,426: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-10 10:36:20,451: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-10 10:36:20,452: INFO: main: <<<<<<stage Data Ingestion stage completed >>>>>>>>>>
+
+x==============x]
+[2023-06-10 10:36:20,453: INFO: main: >>>>>>> stage Prepare Base Model started<<<<<]
+[2023-06-10 10:36:20,460: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-10 10:36:20,540: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-10 10:36:20,548: INFO: common: created directory at: artifacts]
+[2023-06-10 10:36:20,550: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-10 10:36:20,551: ERROR: main: VGG16() got an unexpected keyword argument 'includ_top']
+Traceback (most recent call last):
+  File "main.py", line 22, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_02_prepare_base_model.py", line 15, in main
+    prepare_base_model.get_base_model()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\prepare_base_model.py", line 14, in get_base_model
+    self.model = tf.keras.applications.vgg16.VGG16(
+TypeError: VGG16() got an unexpected keyword argument 'includ_top'
+[2023-06-10 10:36:45,693: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-10 10:36:45,699: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-10 10:36:45,702: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-10 10:36:45,704: INFO: common: created directory at: artifacts]
+[2023-06-10 10:36:45,704: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-10 10:36:45,731: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-10 10:36:45,765: INFO: main: <<<<<<stage Data Ingestion stage completed >>>>>>>>>>
+
+x==============x]
+[2023-06-10 10:36:45,767: INFO: main: >>>>>>> stage Prepare Base Model started<<<<<]
+[2023-06-10 10:36:45,813: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-10 10:36:45,824: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-10 10:36:45,856: INFO: common: created directory at: artifacts]
+[2023-06-10 10:36:45,901: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-10 10:37:02,482: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-10 10:37:03,842: ERROR: main: ('Keyword argument not understood:', 'output')]
+Traceback (most recent call last):
+  File "main.py", line 22, in <module>
+    data_ingestion.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_02_prepare_base_model.py", line 16, in main
+    prepare_base_model.update_base_model()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\prepare_base_model.py", line 54, in update_base_model
+    self.full_model = self._prepare_full_model(
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\prepare_base_model.py", line 37, in _prepare_full_model
+    full_model = tf.keras.models.Model(
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\tensorflow\python\trackable\base.py", line 205, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\keras\utils\generic_utils.py", line 514, in validate_kwargs
+    raise TypeError(error_message, kwarg)
+TypeError: ('Keyword argument not understood:', 'output')
+[2023-06-10 10:39:33,586: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-10 10:39:33,589: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-10 10:39:33,594: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-10 10:39:33,595: INFO: common: created directory at: artifacts]
+[2023-06-10 10:39:33,596: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-10 10:39:33,599: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-10 10:39:33,600: INFO: main: <<<<<<stage Data Ingestion stage completed >>>>>>>>>>
+
+x==============x]
+[2023-06-10 10:39:33,629: INFO: main: >>>>>>> stage Prepare Base Model started<<<<<]
+[2023-06-10 10:39:33,639: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-10 10:39:33,677: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-10 10:39:33,679: INFO: common: created directory at: artifacts]
+[2023-06-10 10:39:33,683: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-10 10:39:34,503: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-10 10:39:37,615: INFO: main: <<<<<<stage Prepare Base Model completed >>>>>>>>>>
+
+x==============x]
