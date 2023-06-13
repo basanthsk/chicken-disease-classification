@@ -3,7 +3,8 @@ from chickenClassifier.utils.common import read_yaml, create_directories
 import os
 from chickenClassifier.entity.config_entity import (DataIngestionConfig,
                                                     PrepareBaseModelConfig,
-                                                    CallbackConfig)
+                                                    CallbackConfig,
+                                                    TrainingConfig)
 
 class ConfigurationManager:
     def __init__(self,
@@ -56,9 +57,30 @@ class ConfigurationManager:
         callback_config = CallbackConfig(
             root_dir = Path(config.root_dir),
             tensorboard_root_log_dir = Path(config.tensorboard_root_log_dir),
-            checkpoint_model_filepath = Path(config.ckeckpoint_model_filepath)
+            checkpoint_model_filepath = Path(config.checkpoint_model_filepath)
         )
         
         return callback_config
                 
-    
+    def get_training_config(self) -> TrainingConfig:
+        config = self.config.training
+        base_model = self.config.prepare_base_model
+        params = self.params
+        training_data = os.path.join(self.config.data_ingestion.saparate_files,)
+        create_directories([
+            Path(config.root_dir)
+        ])
+        
+        training_config = TrainingConfig(
+            root_dir = Path(config.root_dir),
+            trained_model_path = Path(config.trained_model_path),
+            updated_base_model_path = Path(base_model.updated_base_model),
+            training_data = Path(training_data),
+            num_epochs = params.EPOCHS,
+            batch_size = params.BATCH_SIZE,
+            augmentation = params.AUGMENTATION,
+            image_size = params.IMAGE_SIZE
+            
+        )
+        
+        return training_config

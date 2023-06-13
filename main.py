@@ -1,6 +1,7 @@
 from chickenClassifier import logger
 from chickenClassifier.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from chickenClassifier.pipeline.stage_02_prepare_base_model import PrepareBaseModelTrainingPipeline
+from chickenClassifier.pipeline.stage_03_training import TrainingPipeline
 
 
 
@@ -25,3 +26,15 @@ except Exception as e:
     logger.exception(e)
     raise e
     
+    
+STAGE_NAME = "Training"
+
+try:
+    logger.info(f"**********************")
+    logger.info(f">>>>>>>>stage {STAGE_NAME} started <<<<<<<<<<")
+    model_trainer = TrainingPipeline()
+    model_trainer.main()
+    logger.info(f">>>>>>>> stage {STAGE_NAME} completed <<<<<<<<<<")
+except Exception as e:
+    logger.exception(e)
+    raise e     
