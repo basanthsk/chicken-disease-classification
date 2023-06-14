@@ -24,14 +24,14 @@ class TrainingPipeline:
             callback_list = callback_list
         )
         
-    if __name__ == '__main':
-        try:
-            logger.info(f"**********************")
-            logger.info(f">>>>>>>>stage {STAGE_NAME} started <<<<<<<<<<")
-            obj = TrainingPipeline()
-            obj.main()
-            logger.info(f">>>>>>>> stage {STAGE_NAME} completed <<<<<<<<<<")
-        except Exception as e:
-            logger.exception(e)
-            raise e    
+if __name__ == '__main__':
+    try:
+        logger.info(f"**********************")
+        logger.info(f">>>>>>>>stage {STAGE_NAME} started <<<<<<<<<<")
+        obj = TrainingPipeline()
+        obj.main()
+        logger.info(f">>>>>>>> stage {STAGE_NAME} completed <<<<<<<<<<")
+    except Exception as e:
+        logger.exception(e)
+        raise e    
             

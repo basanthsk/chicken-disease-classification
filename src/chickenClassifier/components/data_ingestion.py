@@ -8,8 +8,6 @@ from pathlib import Path
 from dotenv import load_dotenv
 # from kaggle.api.kaggle_api_extended import KaggleApi
 
-
-
 class DataIngestion:
     def __init__(self,config:DataIngestionConfig):
         self.config = config

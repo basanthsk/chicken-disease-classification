@@ -1450,3 +1450,519 @@ x==============x]
 [2023-06-13 19:32:53,933: INFO: common: created directory at: artifacts\callbacks\checkpoint_dir]
 [2023-06-13 19:32:53,935: INFO: common: created directory at: artifacts\callbacks\tensorboard_log_dir]
 [2023-06-13 19:32:53,937: INFO: common: created directory at: artifacts\training]
+[2023-06-13 23:18:46,105: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-13 23:18:46,138: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:18:46,236: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:18:46,255: INFO: common: created directory at: artifacts]
+[2023-06-13 23:18:46,257: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-13 23:18:46,263: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-13 23:18:46,264: INFO: main: <<<<<<stage Data Ingestion stage completed >>>>>>>>>>
+
+x==============x]
+[2023-06-13 23:18:46,445: INFO: main: >>>>>>> stage Prepare Base Model started<<<<<]
+[2023-06-13 23:18:46,562: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:18:46,654: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:18:46,928: INFO: common: created directory at: artifacts]
+[2023-06-13 23:18:46,943: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-13 23:18:50,080: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-13 23:18:52,908: INFO: main: <<<<<<stage Prepare Base Model completed >>>>>>>>>>
+
+x==============x]
+[2023-06-13 23:18:52,909: INFO: main: *******************]
+[2023-06-13 23:18:52,910: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-06-13 23:18:52,911: ERROR: main: name 'EvaluationPipeline' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 47, in <module>
+    model_evaluation = EvaluationPipeline()
+NameError: name 'EvaluationPipeline' is not defined
+[2023-06-13 23:21:44,542: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-13 23:21:44,583: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:21:44,590: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:21:44,592: INFO: common: created directory at: artifacts]
+[2023-06-13 23:21:44,604: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-13 23:21:44,634: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-13 23:21:44,673: INFO: main: <<<<<<stage Data Ingestion stage completed >>>>>>>>>>
+
+x==============x]
+[2023-06-13 23:21:44,675: INFO: main: >>>>>>> stage Prepare Base Model started<<<<<]
+[2023-06-13 23:21:44,691: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:21:44,723: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:21:44,725: INFO: common: created directory at: artifacts]
+[2023-06-13 23:21:44,759: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-13 23:21:45,616: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-13 23:21:48,990: INFO: main: <<<<<<stage Prepare Base Model completed >>>>>>>>>>
+
+x==============x]
+[2023-06-13 23:21:48,991: INFO: main: *******************]
+[2023-06-13 23:21:48,992: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-06-13 23:21:48,996: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:21:49,020: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:21:49,021: INFO: common: created directory at: artifacts]
+[2023-06-13 23:21:49,022: ERROR: main: get_evaluation_config() missing 1 required positional argument: 'config']
+Traceback (most recent call last):
+  File "main.py", line 49, in <module>
+    model_evaluation.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_04_evaluation.py", line 14, in main
+    eval_config = config.get_evaluation_config()
+TypeError: get_evaluation_config() missing 1 required positional argument: 'config'
+[2023-06-13 23:23:39,119: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-13 23:23:39,125: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:23:39,153: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:23:39,155: INFO: common: created directory at: artifacts]
+[2023-06-13 23:23:39,157: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-13 23:23:39,161: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-13 23:23:39,171: INFO: main: <<<<<<stage Data Ingestion stage completed >>>>>>>>>>
+
+x==============x]
+[2023-06-13 23:23:39,189: INFO: main: >>>>>>> stage Prepare Base Model started<<<<<]
+[2023-06-13 23:23:39,195: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:23:39,230: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:23:39,235: INFO: common: created directory at: artifacts]
+[2023-06-13 23:23:39,236: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-13 23:23:40,106: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-13 23:23:43,429: INFO: main: <<<<<<stage Prepare Base Model completed >>>>>>>>>>
+
+x==============x]
+[2023-06-13 23:23:43,430: INFO: main: *******************]
+[2023-06-13 23:23:43,431: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-06-13 23:23:43,446: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:23:43,496: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:23:43,531: INFO: common: created directory at: artifacts]
+[2023-06-13 23:23:43,539: ERROR: main: name 'config' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 49, in <module>
+    model_evaluation.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_04_evaluation.py", line 14, in main
+    eval_config = config.get_evaluation_config()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\config\configuration.py", line 91, in get_evaluation_config
+    self.config = config
+NameError: name 'config' is not defined
+[2023-06-13 23:24:45,908: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-13 23:24:45,916: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:24:45,943: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:24:45,945: INFO: common: created directory at: artifacts]
+[2023-06-13 23:24:45,946: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-13 23:24:45,950: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-13 23:24:45,951: INFO: main: <<<<<<stage Data Ingestion stage completed >>>>>>>>>>
+
+x==============x]
+[2023-06-13 23:24:45,978: INFO: main: >>>>>>> stage Prepare Base Model started<<<<<]
+[2023-06-13 23:24:46,023: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:24:46,037: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:24:46,059: INFO: common: created directory at: artifacts]
+[2023-06-13 23:24:46,061: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-13 23:24:46,900: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-13 23:24:50,304: INFO: main: <<<<<<stage Prepare Base Model completed >>>>>>>>>>
+
+x==============x]
+[2023-06-13 23:24:50,305: INFO: main: *******************]
+[2023-06-13 23:24:50,306: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-06-13 23:24:50,310: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:24:50,332: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:24:50,334: INFO: common: created directory at: artifacts]
+[2023-06-13 23:24:50,335: ERROR: main: 'Evaluation' object has no attribute 'evaluation']
+Traceback (most recent call last):
+  File "main.py", line 49, in <module>
+    model_evaluation.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_04_evaluation.py", line 16, in main
+    evaluation.evaluation()
+AttributeError: 'Evaluation' object has no attribute 'evaluation'
+[2023-06-13 23:26:27,773: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-13 23:26:27,811: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:26:27,816: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:26:27,841: INFO: common: created directory at: artifacts]
+[2023-06-13 23:26:27,844: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-13 23:26:27,848: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-13 23:26:27,849: INFO: main: <<<<<<stage Data Ingestion stage completed >>>>>>>>>>
+
+x==============x]
+[2023-06-13 23:26:27,850: INFO: main: >>>>>>> stage Prepare Base Model started<<<<<]
+[2023-06-13 23:26:27,858: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:26:27,861: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:26:27,894: INFO: common: created directory at: artifacts]
+[2023-06-13 23:26:27,897: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-13 23:26:28,762: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-13 23:26:32,172: INFO: main: <<<<<<stage Prepare Base Model completed >>>>>>>>>>
+
+x==============x]
+[2023-06-13 23:26:32,173: INFO: main: *******************]
+[2023-06-13 23:26:32,174: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-06-13 23:26:32,179: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:26:32,202: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:26:32,205: INFO: common: created directory at: artifacts]
+[2023-06-13 23:26:32,207: ERROR: main: 'Evaluation' object has no attribute 'evaluation']
+Traceback (most recent call last):
+  File "main.py", line 49, in <module>
+    model_evaluation.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_04_evaluation.py", line 16, in main
+    evaluation.evaluation()
+AttributeError: 'Evaluation' object has no attribute 'evaluation'
+[2023-06-13 23:27:00,188: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-13 23:27:00,199: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:27:00,203: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:27:00,227: INFO: common: created directory at: artifacts]
+[2023-06-13 23:27:00,228: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-13 23:27:00,232: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-13 23:27:00,233: INFO: main: <<<<<<stage Data Ingestion stage completed >>>>>>>>>>
+
+x==============x]
+[2023-06-13 23:27:00,234: INFO: main: >>>>>>> stage Prepare Base Model started<<<<<]
+[2023-06-13 23:27:00,267: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:27:00,306: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:27:00,308: INFO: common: created directory at: artifacts]
+[2023-06-13 23:27:00,309: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-13 23:27:01,200: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-13 23:27:04,907: INFO: main: <<<<<<stage Prepare Base Model completed >>>>>>>>>>
+
+x==============x]
+[2023-06-13 23:27:04,908: INFO: main: *******************]
+[2023-06-13 23:27:04,909: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-06-13 23:27:04,913: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:27:04,916: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:27:04,917: INFO: common: created directory at: artifacts]
+[2023-06-13 23:27:04,942: ERROR: main: No file or directory found at artifacts\training\model.h5]
+Traceback (most recent call last):
+  File "main.py", line 49, in <module>
+    model_evaluation.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_04_evaluation.py", line 16, in main
+    evaluation.evaluation()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\evaluation.py", line 43, in evaluation
+    model = self.load_model(self.config.model_path)
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\evaluation.py", line 40, in load_model
+    return tf.keras.models.load_model(path)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at artifacts\training\model.h5
+[2023-06-13 23:28:12,165: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-13 23:28:12,172: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:28:12,177: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:28:12,178: INFO: common: created directory at: artifacts]
+[2023-06-13 23:28:12,179: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-13 23:28:12,214: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-13 23:28:12,216: INFO: main: <<<<<<stage Data Ingestion stage completed >>>>>>>>>>
+
+x==============x]
+[2023-06-13 23:28:12,218: INFO: main: >>>>>>> stage Prepare Base Model started<<<<<]
+[2023-06-13 23:28:12,301: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:28:12,338: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:28:12,342: INFO: common: created directory at: artifacts]
+[2023-06-13 23:28:12,344: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-13 23:28:13,199: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-13 23:28:16,912: INFO: main: <<<<<<stage Prepare Base Model completed >>>>>>>>>>
+
+x==============x]
+[2023-06-13 23:28:16,914: INFO: main: **********************]
+[2023-06-13 23:28:16,914: INFO: main: >>>>>>>>stage Training started <<<<<<<<<<]
+[2023-06-13 23:28:16,919: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:28:16,942: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:28:16,944: INFO: common: created directory at: artifacts]
+[2023-06-13 23:28:16,946: INFO: common: created directory at: artifacts\callbacks\checkpoint_dir]
+[2023-06-13 23:28:16,947: INFO: common: created directory at: artifacts\callbacks\tensorboard_log_dir]
+[2023-06-13 23:28:16,949: INFO: common: created directory at: artifacts\training]
+[2023-06-13 23:28:59,387: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-13 23:28:59,393: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:28:59,426: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:28:59,428: INFO: common: created directory at: artifacts]
+[2023-06-13 23:28:59,430: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-13 23:28:59,443: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-13 23:28:59,450: INFO: main: <<<<<<stage Data Ingestion stage completed >>>>>>>>>>
+
+x==============x]
+[2023-06-13 23:28:59,467: INFO: main: >>>>>>> stage Prepare Base Model started<<<<<]
+[2023-06-13 23:28:59,484: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:28:59,515: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:28:59,518: INFO: common: created directory at: artifacts]
+[2023-06-13 23:28:59,520: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-13 23:29:00,347: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-13 23:29:03,691: INFO: main: <<<<<<stage Prepare Base Model completed >>>>>>>>>>
+
+x==============x]
+[2023-06-13 23:29:03,692: INFO: main: **********************]
+[2023-06-13 23:29:03,693: INFO: main: >>>>>>>>stage Training started <<<<<<<<<<]
+[2023-06-13 23:29:03,698: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:29:03,722: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:29:03,723: INFO: common: created directory at: artifacts]
+[2023-06-13 23:29:03,725: INFO: common: created directory at: artifacts\callbacks\checkpoint_dir]
+[2023-06-13 23:29:03,726: INFO: common: created directory at: artifacts\callbacks\tensorboard_log_dir]
+[2023-06-13 23:29:03,728: INFO: common: created directory at: artifacts\training]
+[2023-06-13 23:46:06,385: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-13 23:46:06,487: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:46:06,869: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:46:06,877: INFO: common: created directory at: artifacts]
+[2023-06-13 23:46:06,976: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-13 23:46:07,366: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-13 23:46:07,699: INFO: main: <<<<<<stage Data Ingestion stage completed >>>>>>>>>>
+
+x==============x]
+[2023-06-13 23:46:07,720: INFO: main: >>>>>>> stage Prepare Base Model started<<<<<]
+[2023-06-13 23:46:08,099: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:46:08,133: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:46:08,289: INFO: common: created directory at: artifacts]
+[2023-06-13 23:46:08,497: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-13 23:46:10,831: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-13 23:46:16,068: INFO: main: <<<<<<stage Prepare Base Model completed >>>>>>>>>>
+
+x==============x]
+[2023-06-13 23:46:16,071: INFO: main: **********************]
+[2023-06-13 23:46:16,073: INFO: main: >>>>>>>>stage Training started <<<<<<<<<<]
+[2023-06-13 23:46:16,088: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-13 23:46:16,147: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-13 23:46:16,388: INFO: common: created directory at: artifacts]
+[2023-06-13 23:46:16,482: INFO: common: created directory at: artifacts\callbacks\checkpoint_dir]
+[2023-06-13 23:46:16,669: INFO: common: created directory at: artifacts\callbacks\tensorboard_log_dir]
+[2023-06-13 23:46:16,884: INFO: common: created directory at: artifacts\training]
+[2023-06-14 00:50:39,525: ERROR: main: 'Training' object has no attribute 'save_model']
+Traceback (most recent call last):
+  File "main.py", line 37, in <module>
+    model_trainer.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_03_training.py", line 23, in main
+    training.train(
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\training.py", line 81, in train
+    self.save_model(
+AttributeError: 'Training' object has no attribute 'save_model'
+[2023-06-14 10:29:46,368: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-14 10:29:46,534: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-14 10:29:46,544: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-14 10:29:46,546: INFO: common: created directory at: artifacts]
+[2023-06-14 10:29:46,547: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-14 10:29:46,552: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-14 10:29:46,552: INFO: main: <<<<<<stage Data Ingestion stage completed >>>>>>>>>>
+
+x==============x]
+[2023-06-14 10:29:46,553: INFO: main: >>>>>>> stage Prepare Base Model started<<<<<]
+[2023-06-14 10:29:46,575: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-14 10:29:46,647: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-14 10:29:46,651: INFO: common: created directory at: artifacts]
+[2023-06-14 10:29:46,653: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-14 10:29:48,058: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-14 10:29:52,053: INFO: main: <<<<<<stage Prepare Base Model completed >>>>>>>>>>
+
+x==============x]
+[2023-06-14 10:29:52,054: INFO: main: **********************]
+[2023-06-14 10:29:52,057: INFO: main: >>>>>>>>stage Training started <<<<<<<<<<]
+[2023-06-14 10:29:52,068: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-14 10:29:52,099: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-14 10:29:52,113: INFO: common: created directory at: artifacts]
+[2023-06-14 10:29:52,130: INFO: common: created directory at: artifacts\callbacks\checkpoint_dir]
+[2023-06-14 10:29:52,133: INFO: common: created directory at: artifacts\callbacks\tensorboard_log_dir]
+[2023-06-14 10:29:52,136: INFO: common: created directory at: artifacts\training]
+[2023-06-14 11:31:55,129: ERROR: main: 'Training' object has no attribute 'save_model']
+Traceback (most recent call last):
+  File "f:/ineuron/project/chicken-disease-classification/main.py", line 37, in <module>
+    model_trainer.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_03_training.py", line 23, in main
+    training.train(
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\training.py", line 81, in train
+    self.save_model(
+AttributeError: 'Training' object has no attribute 'save_model'
+[2023-06-14 12:17:31,716: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-14 12:17:31,769: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-14 12:17:31,858: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-14 12:17:31,861: INFO: common: created directory at: artifacts]
+[2023-06-14 12:17:31,872: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-14 12:17:31,914: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-14 12:17:31,917: INFO: main: <<<<<<stage Data Ingestion stage completed >>>>>>>>>>
+
+x==============x]
+[2023-06-14 12:17:31,918: INFO: main: >>>>>>> stage Prepare Base Model started<<<<<]
+[2023-06-14 12:17:31,927: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-14 12:17:31,935: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-14 12:17:31,937: INFO: common: created directory at: artifacts]
+[2023-06-14 12:17:31,939: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-14 12:17:33,714: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-14 12:17:37,519: INFO: main: <<<<<<stage Prepare Base Model completed >>>>>>>>>>
+
+x==============x]
+[2023-06-14 12:17:37,520: INFO: main: **********************]
+[2023-06-14 12:17:37,521: INFO: main: >>>>>>>>stage Training started <<<<<<<<<<]
+[2023-06-14 12:17:37,529: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-14 12:17:37,536: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-14 12:17:37,622: INFO: common: created directory at: artifacts]
+[2023-06-14 12:17:37,718: INFO: common: created directory at: artifacts\callbacks\checkpoint_dir]
+[2023-06-14 12:17:37,932: INFO: common: created directory at: artifacts\callbacks\tensorboard_log_dir]
+[2023-06-14 12:17:37,956: INFO: common: created directory at: artifacts\training]
+[2023-06-14 13:54:10,789: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-14 13:54:11,056: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-14 13:54:11,198: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-14 13:54:11,213: INFO: common: created directory at: artifacts]
+[2023-06-14 13:54:11,214: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-14 13:54:11,220: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-14 13:54:11,222: INFO: main: <<<<<<stage Data Ingestion stage completed >>>>>>>>>>
+
+x==============x]
+[2023-06-14 13:54:11,325: INFO: main: >>>>>>> stage Prepare Base Model started<<<<<]
+[2023-06-14 13:54:11,436: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-14 13:54:11,645: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-14 13:54:12,135: INFO: common: created directory at: artifacts]
+[2023-06-14 13:54:12,386: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-14 13:54:16,527: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-14 13:54:28,080: INFO: main: <<<<<<stage Prepare Base Model completed >>>>>>>>>>
+
+x==============x]
+[2023-06-14 13:54:28,081: INFO: main: **********************]
+[2023-06-14 13:54:28,128: INFO: main: >>>>>>>>stage Training started <<<<<<<<<<]
+[2023-06-14 13:54:28,164: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-14 13:54:28,445: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-14 13:54:28,694: INFO: common: created directory at: artifacts]
+[2023-06-14 13:54:28,839: INFO: common: created directory at: artifacts\callbacks\checkpoint_dir]
+[2023-06-14 13:54:29,045: INFO: common: created directory at: artifacts\callbacks\tensorboard_log_dir]
+[2023-06-14 13:54:29,140: INFO: common: created directory at: artifacts\training]
+[2023-06-14 15:01:02,639: INFO: main: >>>>>>>> stage Training completed <<<<<<<<<<]
+[2023-06-14 15:01:02,640: INFO: main: *******************]
+[2023-06-14 15:01:02,641: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-06-14 15:01:02,650: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-14 15:01:02,710: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-14 15:01:02,712: INFO: common: created directory at: artifacts]
+[2023-06-14 15:01:03,887: ERROR: main: name 'config' is not defined]
+Traceback (most recent call last):
+  File "f:/ineuron/project/chicken-disease-classification/main.py", line 49, in <module>
+    model_evaluation.main()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\stage_04_evaluation.py", line 16, in main
+    evaluation.evaluation()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\evaluation.py", line 44, in evaluation
+    self._valid_generator()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\evaluation.py", line 32, in _valid_generator
+    directory = config.training_data,
+NameError: name 'config' is not defined
+[2023-06-14 15:46:57,375: INFO: main: >>>>>>> stage Data Ingestion stage started<<<<<]
+[2023-06-14 15:46:57,594: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-14 15:46:57,773: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-14 15:46:57,870: INFO: common: created directory at: artifacts]
+[2023-06-14 15:46:57,906: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-14 15:46:57,929: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-14 15:46:58,028: INFO: main: <<<<<<stage Data Ingestion stage completed >>>>>>>>>>
+
+x==============x]
+[2023-06-14 15:46:58,253: INFO: main: >>>>>>> stage Prepare Base Model started<<<<<]
+[2023-06-14 15:46:58,597: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-14 15:46:58,810: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-14 15:46:59,069: INFO: common: created directory at: artifacts]
+[2023-06-14 15:46:59,225: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-14 15:47:01,895: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-14 15:47:06,456: INFO: main: <<<<<<stage Prepare Base Model completed >>>>>>>>>>
+
+x==============x]
+[2023-06-14 15:47:06,458: INFO: main: *******************]
+[2023-06-14 15:47:06,458: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-06-14 15:47:06,472: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-14 15:47:06,508: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-14 15:47:06,546: INFO: common: created directory at: artifacts]
+[2023-06-14 16:11:09,243: INFO: common: json file saved at: scores.json]
+[2023-06-14 16:11:09,251: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2023-06-14 16:46:36,187: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<<]
+[2023-06-14 16:46:36,296: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-14 16:46:36,324: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-14 16:46:36,329: INFO: common: created directory at: artifacts]
+[2023-06-14 16:46:36,331: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-14 16:46:36,343: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-14 16:46:36,346: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed<<<<<<
+
+x===========x]
+[2023-06-14 16:46:46,646: INFO: stage_02_prepare_base_model: ****************************]
+[2023-06-14 16:46:46,647: ERROR: stage_02_prepare_base_model: 'Logger' object has no attribute 'infor']
+Traceback (most recent call last):
+  File "src/chickenClassifier/pipeline/stage_02_prepare_base_model.py", line 23, in <module>
+    logger.infor(f">>>>>>> stage {STAGE_NAME} started <<<<<<<<<<")
+AttributeError: 'Logger' object has no attribute 'infor'
+[2023-06-14 16:49:01,363: INFO: stage_02_prepare_base_model: ****************************]
+[2023-06-14 16:49:01,364: ERROR: stage_02_prepare_base_model: 'Logger' object has no attribute 'infor']
+Traceback (most recent call last):
+  File "src/chickenClassifier/pipeline/stage_02_prepare_base_model.py", line 23, in <module>
+    logger.infor(f">>>>>>> stage {STAGE_NAME} started <<<<<<<<<<")
+AttributeError: 'Logger' object has no attribute 'infor'
+[2023-06-14 16:49:27,854: INFO: stage_02_prepare_base_model: ****************************]
+[2023-06-14 16:49:27,855: INFO: stage_02_prepare_base_model: >>>>>>> stage prepare_base_model started <<<<<<<<<<]
+[2023-06-14 16:49:27,856: ERROR: stage_02_prepare_base_model: name 'PrepareBaseModelTraninigPipeling' is not defined]
+Traceback (most recent call last):
+  File "src/chickenClassifier/pipeline/stage_02_prepare_base_model.py", line 24, in <module>
+    obj = PrepareBaseModelTraninigPipeling()
+NameError: name 'PrepareBaseModelTraninigPipeling' is not defined
+[2023-06-14 16:50:15,552: INFO: stage_02_prepare_base_model: ****************************]
+[2023-06-14 16:50:15,552: INFO: stage_02_prepare_base_model: >>>>>>> stage prepare_base_model started <<<<<<<<<<]
+[2023-06-14 16:50:15,553: ERROR: stage_02_prepare_base_model: name 'PrepareBaseModelTraninigPipeline' is not defined]
+Traceback (most recent call last):
+  File "src/chickenClassifier/pipeline/stage_02_prepare_base_model.py", line 24, in <module>
+    obj = PrepareBaseModelTraninigPipeline()
+NameError: name 'PrepareBaseModelTraninigPipeline' is not defined
+[2023-06-14 16:50:49,568: INFO: stage_02_prepare_base_model: ****************************]
+[2023-06-14 16:50:49,568: INFO: stage_02_prepare_base_model: >>>>>>> stage prepare_base_model started <<<<<<<<<<]
+[2023-06-14 16:50:49,577: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-14 16:50:49,613: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-14 16:50:49,641: INFO: common: created directory at: artifacts]
+[2023-06-14 16:50:49,649: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-14 16:50:51,076: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-14 16:50:53,484: INFO: stage_02_prepare_base_model: >>>>>>>> stage prepare_base_model completed <<<<<<<<
+
+x=============x]
+[2023-06-14 17:23:45,357: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<<]
+[2023-06-14 17:23:45,469: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-14 17:23:45,478: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-14 17:23:45,480: INFO: common: created directory at: artifacts]
+[2023-06-14 17:23:45,482: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-14 17:23:45,488: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-14 17:23:45,490: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed<<<<<<
+
+x===========x]
+[2023-06-14 17:24:32,213: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<<]
+[2023-06-14 17:24:32,334: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-14 17:24:32,339: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-14 17:24:32,340: INFO: common: created directory at: artifacts]
+[2023-06-14 17:24:32,343: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-14 17:26:31,400: INFO: data_ingestion:  download data with kaggle!]
+[2023-06-14 17:26:47,528: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed<<<<<<
+
+x===========x]
+[2023-06-14 18:02:12,436: INFO: stage_04_evaluation: *******************]
+[2023-06-14 18:02:12,530: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-06-14 18:02:12,572: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-14 18:02:12,603: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-14 18:02:12,606: INFO: common: created directory at: artifacts]
+[2023-06-14 18:02:12,628: ERROR: stage_04_evaluation: No file or directory found at artifacts\training\model.h5]
+Traceback (most recent call last):
+  File "f:/ineuron/project/chicken-disease-classification/src/chickenClassifier/pipeline/stage_04_evaluation.py", line 25, in <module>
+    obj.main()
+  File "f:/ineuron/project/chicken-disease-classification/src/chickenClassifier/pipeline/stage_04_evaluation.py", line 16, in main
+    evaluation.evaluation()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\evaluation.py", line 43, in evaluation
+    model = self.load_model(self.config.model_path)
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\evaluation.py", line 40, in load_model
+    return tf.keras.models.load_model(path)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at artifacts\training\model.h5
+[2023-06-14 18:08:13,460: INFO: stage_03_training: **********************]
+[2023-06-14 18:08:13,461: INFO: stage_03_training: >>>>>>>>stage Training started <<<<<<<<<<]
+[2023-06-14 18:08:13,470: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-14 18:08:13,500: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-14 18:08:13,503: INFO: common: created directory at: artifacts]
+[2023-06-14 18:08:13,505: INFO: common: created directory at: artifacts\callbacks\checkpoint_dir]
+[2023-06-14 18:08:13,535: INFO: common: created directory at: artifacts\callbacks\tensorboard_log_dir]
+[2023-06-14 18:08:13,542: INFO: common: created directory at: artifacts/training]
+[2023-06-14 18:09:12,831: INFO: stage_03_training: **********************]
+[2023-06-14 18:09:12,832: INFO: stage_03_training: >>>>>>>>stage Training started <<<<<<<<<<]
+[2023-06-14 18:09:12,839: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-14 18:09:12,843: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-14 18:09:12,845: INFO: common: created directory at: artifacts]
+[2023-06-14 18:09:12,867: INFO: common: created directory at: artifacts\callbacks\checkpoint_dir]
+[2023-06-14 18:09:12,868: INFO: common: created directory at: artifacts\callbacks\tensorboard_log_dir]
+[2023-06-14 18:09:12,873: INFO: common: created directory at: artifacts/training]
+[2023-06-14 19:14:58,556: INFO: stage_03_training: >>>>>>>> stage Training completed <<<<<<<<<<]
+[2023-06-14 19:15:20,901: INFO: stage_04_evaluation: *******************]
+[2023-06-14 19:15:20,901: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-06-14 19:15:20,997: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-14 19:15:21,001: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-14 19:15:21,002: INFO: common: created directory at: artifacts]
+[2023-06-14 19:33:13,647: INFO: common: json file saved at: scores.json]
+[2023-06-14 19:33:13,649: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
