@@ -1966,3 +1966,214 @@ OSError: No file or directory found at artifacts\training\model.h5
 [2023-06-14 19:33:13,649: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2023-06-15 00:58:23,370: INFO: stage_03_training: **********************]
+[2023-06-15 00:58:23,382: INFO: stage_03_training: >>>>>>>>stage Training started <<<<<<<<<<]
+[2023-06-15 00:58:23,432: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-15 00:58:23,439: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-15 00:58:23,441: INFO: common: created directory at: artifacts]
+[2023-06-15 00:58:23,442: INFO: common: created directory at: artifacts\callbacks\checkpoint_dir]
+[2023-06-15 00:58:23,460: INFO: common: created directory at: artifacts\callbacks\tensorboard_log_dir]
+[2023-06-15 00:58:23,465: INFO: common: created directory at: artifacts/training]
+[2023-06-15 01:01:02,654: INFO: stage_03_training: **********************]
+[2023-06-15 01:01:02,657: INFO: stage_03_training: >>>>>>>>stage Training started <<<<<<<<<<]
+[2023-06-15 01:01:02,668: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-15 01:01:02,720: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-15 01:01:02,723: INFO: common: created directory at: artifacts]
+[2023-06-15 01:01:02,726: INFO: common: created directory at: artifacts\callbacks\checkpoint_dir]
+[2023-06-15 01:01:02,728: INFO: common: created directory at: artifacts\callbacks\tensorboard_log_dir]
+[2023-06-15 01:01:02,729: INFO: common: created directory at: artifacts/training]
+[2023-06-15 01:01:04,688: ERROR: stage_03_training: 'DirectoryIterator' object has no attribute 'class_names']
+Traceback (most recent call last):
+  File "f:/ineuron/project/chicken-disease-classification/src/chickenClassifier/pipeline/stage_03_training.py", line 32, in <module>
+    obj.main()
+  File "f:/ineuron/project/chicken-disease-classification/src/chickenClassifier/pipeline/stage_03_training.py", line 22, in main
+    training.train_valid_generator()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\training.py", line 63, in train_valid_generator
+    print(self.train_generator.class_names)
+AttributeError: 'DirectoryIterator' object has no attribute 'class_names'
+[2023-06-15 01:02:22,769: INFO: stage_03_training: **********************]
+[2023-06-15 01:02:22,775: INFO: stage_03_training: >>>>>>>>stage Training started <<<<<<<<<<]
+[2023-06-15 01:02:22,808: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-15 01:02:22,833: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-15 01:02:22,836: INFO: common: created directory at: artifacts]
+[2023-06-15 01:02:22,838: INFO: common: created directory at: artifacts\callbacks\checkpoint_dir]
+[2023-06-15 01:02:22,839: INFO: common: created directory at: artifacts\callbacks\tensorboard_log_dir]
+[2023-06-15 01:02:22,840: INFO: common: created directory at: artifacts/training]
+[2023-06-15 01:05:59,947: INFO: stage_03_training: **********************]
+[2023-06-15 01:05:59,955: INFO: stage_03_training: >>>>>>>>stage Training started <<<<<<<<<<]
+[2023-06-15 01:05:59,990: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-15 01:06:00,020: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-15 01:06:00,047: INFO: common: created directory at: artifacts]
+[2023-06-15 01:06:00,050: INFO: common: created directory at: artifacts\callbacks\checkpoint_dir]
+[2023-06-15 01:06:00,053: INFO: common: created directory at: artifacts\callbacks\tensorboard_log_dir]
+[2023-06-15 01:06:00,054: INFO: common: created directory at: artifacts/training]
+[2023-06-15 01:06:01,873: ERROR: stage_03_training: Argument path of type <class 'str'> to <function save_json at 0x000002CAAE7863A0> does not match annotation type <class 'pathlib.Path'>]
+Traceback (most recent call last):
+  File "f:/ineuron/project/chicken-disease-classification/src/chickenClassifier/pipeline/stage_03_training.py", line 32, in <module>
+    obj.main()
+  File "f:/ineuron/project/chicken-disease-classification/src/chickenClassifier/pipeline/stage_03_training.py", line 22, in main
+    training.train_valid_generator()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\training.py", line 63, in train_valid_generator
+    save_json("artifacts/class_indice.json",self.train_generator.class_indices)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\ensure\main.py", line 803, in __call__
+    raise EnsureError(msg.format(
+ensure.main.EnsureError: Argument path of type <class 'str'> to <function save_json at 0x000002CAAE7863A0> does not match annotation type <class 'pathlib.Path'>
+[2023-06-15 01:06:42,337: INFO: stage_03_training: **********************]
+[2023-06-15 01:06:42,340: INFO: stage_03_training: >>>>>>>>stage Training started <<<<<<<<<<]
+[2023-06-15 01:06:42,380: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-15 01:06:42,408: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-15 01:06:42,411: INFO: common: created directory at: artifacts]
+[2023-06-15 01:06:42,413: INFO: common: created directory at: artifacts\callbacks\checkpoint_dir]
+[2023-06-15 01:06:42,414: INFO: common: created directory at: artifacts\callbacks\tensorboard_log_dir]
+[2023-06-15 01:06:42,440: INFO: common: created directory at: artifacts/training]
+[2023-06-15 01:06:44,209: INFO: common: json file saved at: artifacts\class_indice.json]
+[2023-06-15 01:09:42,743: INFO: stage_03_training: **********************]
+[2023-06-15 01:09:42,748: INFO: stage_03_training: >>>>>>>>stage Training started <<<<<<<<<<]
+[2023-06-15 01:09:42,780: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-15 01:09:42,807: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-15 01:09:42,809: INFO: common: created directory at: artifacts]
+[2023-06-15 01:09:42,811: INFO: common: created directory at: artifacts\callbacks\checkpoint_dir]
+[2023-06-15 01:09:42,814: INFO: common: created directory at: artifacts\callbacks\tensorboard_log_dir]
+[2023-06-15 01:09:42,817: INFO: common: created directory at: artifacts/training]
+[2023-06-15 01:09:44,567: ERROR: stage_03_training: too many values to unpack (expected 2)]
+Traceback (most recent call last):
+  File "f:/ineuron/project/chicken-disease-classification/src/chickenClassifier/pipeline/stage_03_training.py", line 32, in <module>
+    obj.main()
+  File "f:/ineuron/project/chicken-disease-classification/src/chickenClassifier/pipeline/stage_03_training.py", line 22, in main
+    training.train_valid_generator()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\training.py", line 63, in train_valid_generator
+    labels2class = {V:k for k,v in self.train_generator.class_indices }
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\training.py", line 63, in <dictcomp>
+    labels2class = {V:k for k,v in self.train_generator.class_indices }
+ValueError: too many values to unpack (expected 2)
+[2023-06-15 01:10:30,964: INFO: stage_03_training: **********************]
+[2023-06-15 01:10:30,967: INFO: stage_03_training: >>>>>>>>stage Training started <<<<<<<<<<]
+[2023-06-15 01:10:30,979: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-15 01:10:31,004: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-15 01:10:31,005: INFO: common: created directory at: artifacts]
+[2023-06-15 01:10:31,023: INFO: common: created directory at: artifacts\callbacks\checkpoint_dir]
+[2023-06-15 01:10:31,029: INFO: common: created directory at: artifacts\callbacks\tensorboard_log_dir]
+[2023-06-15 01:10:31,031: INFO: common: created directory at: artifacts/training]
+[2023-06-15 01:10:33,785: INFO: common: json file saved at: artifacts\class_indice.json]
+[2023-06-15 01:47:12,756: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8080]
+[2023-06-15 01:47:12,858: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-06-15 01:47:18,595: INFO: _internal: 127.0.0.1 - - [15/Jun/2023 01:47:18] "GET / HTTP/1.1" 200 -]
+[2023-06-15 01:47:24,866: INFO: _internal: 127.0.0.1 - - [15/Jun/2023 01:47:24] "GET / HTTP/1.1" 200 -]
+[2023-06-15 01:47:35,911: INFO: _internal: 127.0.0.1 - - [15/Jun/2023 01:47:35] "GET / HTTP/1.1" 200 -]
+[2023-06-15 01:48:27,439: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 33, in predictRoute
+    decodeImage(image, clApp.filename)
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\utils\common.py", line 47, in decodeImage
+    f.write(imagdata)
+NameError: name 'imagdata' is not defined
+[2023-06-15 01:48:27,519: INFO: _internal: 127.0.0.1 - - [15/Jun/2023 01:48:27] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-06-15 01:49:11,647: INFO: _internal: 127.0.0.1 - - [15/Jun/2023 01:49:11] "GET / HTTP/1.1" 200 -]
+[2023-06-15 01:49:18,093: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 33, in predictRoute
+    decodeImage(image, clApp.filename)
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\utils\common.py", line 47, in decodeImage
+    f.write(imgdata)
+NameError: name 'imagdata' is not defined
+[2023-06-15 01:49:18,100: INFO: _internal: 127.0.0.1 - - [15/Jun/2023 01:49:18] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-06-15 01:49:49,867: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8080]
+[2023-06-15 01:49:49,869: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-06-15 01:49:53,781: INFO: _internal: 127.0.0.1 - - [15/Jun/2023 01:49:53] "GET / HTTP/1.1" 200 -]
+[2023-06-15 01:50:01,979: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 34, in predictRoute
+    result = clApp.classifier.predict()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\predict.py", line 21, in predict
+    test_image = image.load_image(imagename,target_size = (224,224))
+AttributeError: module 'keras.api._v2.keras.preprocessing.image' has no attribute 'load_image'
+[2023-06-15 01:50:01,987: INFO: _internal: 127.0.0.1 - - [15/Jun/2023 01:50:01] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-06-15 01:51:46,669: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8080]
+[2023-06-15 01:51:46,719: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-06-15 01:51:46,902: INFO: _internal: 127.0.0.1 - - [15/Jun/2023 01:51:46] "GET / HTTP/1.1" 200 -]
+[2023-06-15 01:51:56,612: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 34, in predictRoute
+    result = clApp.classifier.predict()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\predict.py", line 27, in predict
+    return [{"image":self.labes2class(str(result[0]))}    ]
+TypeError: labes2class() takes 1 positional argument but 2 were given
+[2023-06-15 01:51:56,651: INFO: _internal: 127.0.0.1 - - [15/Jun/2023 01:51:56] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-06-15 01:53:11,766: INFO: _internal: 127.0.0.1 - - [15/Jun/2023 01:53:11] "GET / HTTP/1.1" 200 -]
+[2023-06-15 01:57:10,804: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8080]
+[2023-06-15 01:57:10,806: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-06-15 01:57:22,967: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 34, in predictRoute
+    result = clApp.classifier.predict()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\predict.py", line 27, in predict
+    return [{"image":self.labes2class(result[0])}    ]
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\pipeline\predict.py", line 13, in labes2class
+    content = json.load(f)
+NameError: name 'json' is not defined
+[2023-06-15 01:57:22,983: INFO: _internal: 127.0.0.1 - - [15/Jun/2023 01:57:22] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-06-15 01:57:39,238: INFO: _internal: 127.0.0.1 - - [15/Jun/2023 01:57:39] "GET / HTTP/1.1" 200 -]

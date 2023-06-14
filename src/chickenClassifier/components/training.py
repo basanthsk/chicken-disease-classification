@@ -2,7 +2,7 @@ import os
 import urllib.request as request
 import shutil
 from chickenClassifier import logger
-from chickenClassifier.utils.common import get_size
+from chickenClassifier.utils.common import get_size,save_json
 from chickenClassifier.entity.config_entity import TrainingConfig
 from pathlib import Path
 import tensorflow as tf
@@ -60,6 +60,9 @@ class Training:
             **dataflow_kwargs
             
         )
+        labels2class = {v:k for k,v in self.train_generator.class_indices.items()}
+        save_json(Path("artifacts/class_indice.json"),labels2class)
+        
     @staticmethod
     def save_model(path:Path, model:tf.keras.Model):
         model.save(path)
