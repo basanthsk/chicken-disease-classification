@@ -2177,3 +2177,8 @@ Traceback (most recent call last):
 NameError: name 'json' is not defined
 [2023-06-15 01:57:22,983: INFO: _internal: 127.0.0.1 - - [15/Jun/2023 01:57:22] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
 [2023-06-15 01:57:39,238: INFO: _internal: 127.0.0.1 - - [15/Jun/2023 01:57:39] "GET / HTTP/1.1" 200 -]
+[2023-06-15 01:57:50,573: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8080]
+[2023-06-15 01:57:50,575: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-06-15 01:57:56,822: INFO: _internal: 127.0.0.1 - - [15/Jun/2023 01:57:56] "POST /predict HTTP/1.1" 200 -]
+[2023-06-15 01:58:12,737: INFO: _internal: 127.0.0.1 - - [15/Jun/2023 01:58:12] "POST /predict HTTP/1.1" 200 -]
