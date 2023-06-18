@@ -26,7 +26,7 @@ python app.py
 ```
 
 ### DVC cmd
-1. dvc init # instialization of the dvc 
+1. dvc init # initialization of the dvc 
 2. dvc repro # to run the pipeline
 
 ## AWS CICD Deplyement with github actions
