@@ -90,7 +90,8 @@ newgrp docker
 ## To Configure EC2 as self-hosted runner
 from the gitbub setting of the repo
 ```bash
-setting > ctions > runner > new self hosted runner > choose os > then run command one by one
+setting > actions > runner > new self hosted runner > choose os > then run command one by one
+set the name of the runner as "self-hosted" 
 ```
 ## Add AWS credential into github secrets
 
