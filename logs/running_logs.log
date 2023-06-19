@@ -2182,3 +2182,240 @@ NameError: name 'json' is not defined
 [2023-06-15 01:57:50,575: INFO: _internal: [33mPress CTRL+C to quit[0m]
 [2023-06-15 01:57:56,822: INFO: _internal: 127.0.0.1 - - [15/Jun/2023 01:57:56] "POST /predict HTTP/1.1" 200 -]
 [2023-06-15 01:58:12,737: INFO: _internal: 127.0.0.1 - - [15/Jun/2023 01:58:12] "POST /predict HTTP/1.1" 200 -]
+[2023-06-19 17:54:25,207: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<<]
+[2023-06-19 17:54:25,365: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-19 17:54:25,378: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-19 17:54:25,379: INFO: common: created directory at: artifacts]
+[2023-06-19 17:54:25,380: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-19 17:54:25,381: ERROR: stage_01_data_ingestion: "'ConfigBox' object has no attribute 'data_class_csv'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'data_class_csv'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'data_class_csv'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'data_class_csv'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'data_class_csv'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'data_class_csv'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'data_class_csv'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'data_class_csv'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "f:/ineuron/project/chicken-disease-classification/src/chickenClassifier/pipeline/stage_01_data_ingestion.py", line 23, in <module>
+    obj.main()
+  File "f:/ineuron/project/chicken-disease-classification/src/chickenClassifier/pipeline/stage_01_data_ingestion.py", line 14, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\config\configuration.py", line 30, in get_data_ingestion_config
+    data_class_csv = config.data_class_csv,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'data_class_csv'"
+[2023-06-19 17:58:59,527: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<<]
+[2023-06-19 17:58:59,674: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-19 17:58:59,705: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-19 17:58:59,709: INFO: common: created directory at: artifacts]
+[2023-06-19 17:58:59,710: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-19 17:58:59,710: ERROR: stage_01_data_ingestion: "'ConfigBox' object has no attribute 'data_class_csv'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'data_class_csv'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'data_class_csv'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'data_class_csv'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'data_class_csv'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'data_class_csv'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'data_class_csv'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'data_class_csv'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "f:/ineuron/project/chicken-disease-classification/src/chickenClassifier/pipeline/stage_01_data_ingestion.py", line 23, in <module>
+    obj.main()
+  File "f:/ineuron/project/chicken-disease-classification/src/chickenClassifier/pipeline/stage_01_data_ingestion.py", line 14, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\config\configuration.py", line 30, in get_data_ingestion_config
+    data_class_csv = config.data_class_csv,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'data_class_csv'"
+[2023-06-19 17:59:23,651: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<<]
+[2023-06-19 17:59:23,787: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-19 17:59:23,792: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-19 17:59:23,793: INFO: common: created directory at: artifacts]
+[2023-06-19 17:59:23,794: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-19 17:59:23,797: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-19 17:59:23,797: ERROR: stage_01_data_ingestion: name 'pd' is not defined]
+Traceback (most recent call last):
+  File "f:/ineuron/project/chicken-disease-classification/src/chickenClassifier/pipeline/stage_01_data_ingestion.py", line 23, in <module>
+    obj.main()
+  File "f:/ineuron/project/chicken-disease-classification/src/chickenClassifier/pipeline/stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.saparate_files()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\data_ingestion.py", line 30, in saparate_files
+    df = pd.read_csv(self.config.data_class_csv)
+NameError: name 'pd' is not defined
+[2023-06-19 17:59:40,498: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<<]
+[2023-06-19 17:59:40,509: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-19 17:59:40,530: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-19 17:59:40,532: INFO: common: created directory at: artifacts]
+[2023-06-19 17:59:40,533: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-19 17:59:40,538: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-19 17:59:40,559: ERROR: stage_01_data_ingestion: name 'pd' is not defined]
+Traceback (most recent call last):
+  File "f:/ineuron/project/chicken-disease-classification/src/chickenClassifier/pipeline/stage_01_data_ingestion.py", line 24, in <module>
+    obj.main()
+  File "f:/ineuron/project/chicken-disease-classification/src/chickenClassifier/pipeline/stage_01_data_ingestion.py", line 18, in main
+    data_ingestion.saparate_files()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\data_ingestion.py", line 30, in saparate_files
+    df = pd.read_csv(self.config.data_class_csv)
+NameError: name 'pd' is not defined
+[2023-06-19 18:00:03,596: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<<]
+[2023-06-19 18:00:03,614: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-19 18:00:03,633: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-19 18:00:03,639: INFO: common: created directory at: artifacts]
+[2023-06-19 18:00:03,653: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-19 18:00:03,702: INFO: data_ingestion: File already exists of size: ~0 KB]
+[2023-06-19 18:00:04,147: ERROR: stage_01_data_ingestion: [Errno 2] No such file or directory: 'downloaded/Train\\cocci.1866.jpg']
+Traceback (most recent call last):
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\shutil.py", line 791, in move
+    os.rename(src, real_dst)
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'downloaded/Train\\cocci.1866.jpg' -> 'artifacts/data_ingestion\\Coccidiosis\\cocci.1866.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "f:/ineuron/project/chicken-disease-classification/src/chickenClassifier/pipeline/stage_01_data_ingestion.py", line 24, in <module>
+    obj.main()
+  File "f:/ineuron/project/chicken-disease-classification/src/chickenClassifier/pipeline/stage_01_data_ingestion.py", line 18, in main
+    data_ingestion.saparate_files()
+  File "f:\ineuron\project\chicken-disease-classification\src\chickenClassifier\components\data_ingestion.py", line 45, in saparate_files
+    shutil.move(row['source_path'], row['destination_path'])
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\shutil.py", line 811, in move
+    copy_function(src, real_dst)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\shutil.py", line 435, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "C:\Users\Zaban\anaconda3\envs\chicken\lib\shutil.py", line 264, in copyfile
+    with open(src, 'rb') as fsrc, open(dst, 'wb') as fdst:
+FileNotFoundError: [Errno 2] No such file or directory: 'downloaded/Train\\cocci.1866.jpg'
+[2023-06-19 18:01:15,873: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<<]
+[2023-06-19 18:01:15,907: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-19 18:01:15,915: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-19 18:01:15,917: INFO: common: created directory at: artifacts]
+[2023-06-19 18:01:15,941: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-19 18:09:10,900: INFO: data_ingestion:  download data with kaggle!]
+[2023-06-19 18:12:48,993: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed<<<<<<
+
+x===========x]
+[2023-06-19 18:27:46,226: INFO: stage_02_prepare_base_model: ****************************]
+[2023-06-19 18:27:46,256: INFO: stage_02_prepare_base_model: >>>>>>> stage prepare_base_model started <<<<<<<<<<]
+[2023-06-19 18:27:46,281: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-19 18:27:46,322: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-19 18:27:46,329: INFO: common: created directory at: artifacts]
+[2023-06-19 18:27:46,331: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-19 18:27:48,369: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-19 18:27:51,350: INFO: stage_02_prepare_base_model: >>>>>>>> stage prepare_base_model completed <<<<<<<<
+
+x=============x]
+[2023-06-19 18:28:57,909: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<<]
+[2023-06-19 18:28:57,959: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-19 18:28:57,983: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-19 18:28:57,985: INFO: common: created directory at: artifacts]
+[2023-06-19 18:28:57,988: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-06-19 18:30:49,152: INFO: data_ingestion:  download data with kaggle!]
+[2023-06-19 18:31:07,382: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed<<<<<<
+
+x===========x]
+[2023-06-19 18:40:18,352: INFO: stage_02_prepare_base_model: ****************************]
+[2023-06-19 18:40:18,381: INFO: stage_02_prepare_base_model: >>>>>>> stage prepare_base_model started <<<<<<<<<<]
+[2023-06-19 18:40:18,416: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-19 18:40:18,441: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-19 18:40:18,445: INFO: common: created directory at: artifacts]
+[2023-06-19 18:40:18,468: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-06-19 18:40:19,544: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-19 18:40:21,585: INFO: stage_02_prepare_base_model: >>>>>>>> stage prepare_base_model completed <<<<<<<<
+
+x=============x]
+[2023-06-19 18:40:44,786: INFO: stage_03_training: **********************]
+[2023-06-19 18:40:44,787: INFO: stage_03_training: >>>>>>>>stage Training started <<<<<<<<<<]
+[2023-06-19 18:40:44,815: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-19 18:40:44,837: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-19 18:40:44,841: INFO: common: created directory at: artifacts]
+[2023-06-19 18:40:44,844: INFO: common: created directory at: artifacts\callbacks\checkpoint_dir]
+[2023-06-19 18:40:44,863: INFO: common: created directory at: artifacts\callbacks\tensorboard_log_dir]
+[2023-06-19 18:40:44,870: INFO: common: created directory at: artifacts/training]
+[2023-06-19 18:40:46,697: INFO: common: json file saved at: artifacts\class_indice.json]
+[2023-06-19 19:49:10,407: INFO: stage_03_training: >>>>>>>> stage Training completed <<<<<<<<<<]
+[2023-06-19 19:49:59,818: INFO: stage_04_evaluation: *******************]
+[2023-06-19 19:49:59,819: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-06-19 19:49:59,950: INFO: common: yaml file:config\config.yaml loaded successfully]
+[2023-06-19 19:49:59,986: INFO: common: yaml file:params.yaml loaded successfully]
+[2023-06-19 19:49:59,989: INFO: common: created directory at: artifacts]
+[2023-06-19 20:10:06,449: INFO: common: json file saved at: scores.json]
+[2023-06-19 20:10:06,451: INFO: stage_04_evaluation: >>>>>> stage Evaluation stagecompleted <<<<<<
+
+x==========x]

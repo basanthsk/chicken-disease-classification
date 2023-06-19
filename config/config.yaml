@@ -6,6 +6,7 @@ data_ingestion:
   download_dir: downloaded
   downloaded_files: downloaded/Train
   saparate_files: artifacts/data_ingestion
+  data_class_csv: downloaded/train_data.csv
 
 prepare_base_model:
   root_dir: artifacts/prepare_base_model

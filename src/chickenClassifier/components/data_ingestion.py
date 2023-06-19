@@ -1,4 +1,5 @@
 import os 
+import pandas as pd
 import urllib.request as request
 import shutil
 from chickenClassifier import logger
@@ -27,20 +28,23 @@ class DataIngestion:
             logger.info(f"File already exists of size: {get_size(Path(self.config.download_dir))}")
     
     def saparate_files(self):
-        # Iterate over each file in the source directory
-        for filename in os.listdir(self.config.downloaded_files):
-            # Extract the filename without extension
-            file_name, file_extension = os.path.splitext(filename)
-            directory_name = file_name.split('.')[0]
+        df = pd.read_csv(self.config.data_class_csv)
+        groups = df.groupby('label')
+        for name, group in groups:
+            folder_name = str(name)
+            folder_path = os.path.join(self.config.saparate_files, folder_name)
+            os.makedirs(folder_path, exist_ok=True)
             
-            # Check if the file is an image file (you can add more extensions if needed)
-            if file_extension.lower() in ['.jpg', '.jpeg', '.png', '.gif']:
-                # Create the folder based on the filename if it doesn't exist
-                folder_path = os.path.join(self.config.saparate_files, directory_name)
-                os.makedirs(folder_path, exist_ok=True)
-                
-                # Move the image file to the corresponding folder
-                source_file_path = os.path.join(self.config.downloaded_files, filename)
-                destination_file_path = os.path.join(folder_path, filename)
-                shutil.move(source_file_path, destination_file_path)
+            # Create a new column with the source file path
+            group['source_path'] = group['images'].apply(lambda x: os.path.join(self.config.downloaded_files, x))
+            # Create a new column with the destination file path
+            group['destination_path'] = group['images'].apply(lambda x: os.path.join(folder_path, x))
+    
+            # Move the image file to the corresponding folder
+            for index, row in group.iterrows():
+                    shutil.move(row['source_path'], row['destination_path'])
+    
+    
+    
+       
                         

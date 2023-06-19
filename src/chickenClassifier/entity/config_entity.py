@@ -7,7 +7,8 @@ class DataIngestionConfig:
     source_URL: str
     download_dir: Path 
     downloaded_files: Path
-    saparate_files: Path 
+    saparate_files: Path
+    data_class_csv: Path 
     
 @dataclass(frozen=True)
 class PrepareBaseModelConfig:

@@ -26,7 +26,8 @@ class ConfigurationManager:
             source_URL=config.source_URL,
             download_dir=config.download_dir,
             downloaded_files = config.downloaded_files,
-            saparate_files=config.saparate_files
+            saparate_files=config.saparate_files,
+            data_class_csv = config.data_class_csv,
         )
         
         return data_ingestion_config

@@ -3,6 +3,7 @@ from chickenClassifier.components.data_ingestion import DataIngestion
 from chickenClassifier import logger
 
 
+
 STAGE_NAME = "Data Ingestion stage"
 
 class DataIngestionTrainingPipeline:

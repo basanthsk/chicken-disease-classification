@@ -4,14 +4,14 @@ stages:
     cmd: python src/chickenClassifier/pipeline/stage_01_data_ingestion.py
     deps:
     - path: config/config.yaml
-      md5: ee66d388426dffdbaae696664ae640b0
-      size: 734
+      md5: 6cba82c1e3a109a1e6e8582aa7e7edc9
+      size: 779
     - path: src/chickenClassifier/pipeline/stage_01_data_ingestion.py
-      md5: ef1bfa765e7b88b7d6c7e55deaeb7efb
-      size: 959
+      md5: 197c8191285111433e32a0516caccd03
+      size: 961
     outs:
     - path: artifacts/data_ingestion
-      md5: f87a3d512849211e548d48d8ffd57328.dir
+      md5: 2abb59f83b743d7f29d8ec9479d0e229.dir
       size: 293906097
       nfiles: 8067
     - path: downloaded
@@ -22,14 +22,14 @@ stages:
     cmd: python src/chickenClassifier/pipeline/stage_02_prepare_base_model.py
     deps:
     - path: config/config.yaml
-      md5: ee66d388426dffdbaae696664ae640b0
-      size: 734
+      md5: 6cba82c1e3a109a1e6e8582aa7e7edc9
+      size: 779
     - path: src/chickenClassifier/pipeline/stage_02_prepare_base_model.py
       md5: c84f671c0c45bc5d8379bfb919ebdff0
       size: 1066
     params:
       params.yaml:
-        CLASSES: 8
+        CLASSES: 4
         IMAGE_SIZE:
         - 224
         - 224
@@ -39,23 +39,23 @@ stages:
         WEIGHTS: imagenet
     outs:
     - path: artifacts/prepare_base_model
-      md5: 70a1cbf49b790fbd80aad07a62c6fcdf.dir
-      size: 118656672
+      md5: a2b6d348e6253f8ece2e7b80a3a73570.dir
+      size: 118255264
       nfiles: 2
   training:
     cmd: python src/chickenClassifier/pipeline/stage_03_training.py
     deps:
     - path: artifacts/data_ingestion
-      md5: f87a3d512849211e548d48d8ffd57328.dir
+      md5: 2abb59f83b743d7f29d8ec9479d0e229.dir
       size: 293906097
       nfiles: 8067
     - path: artifacts/prepare_base_model
-      md5: 70a1cbf49b790fbd80aad07a62c6fcdf.dir
-      size: 118656672
+      md5: a2b6d348e6253f8ece2e7b80a3a73570.dir
+      size: 118255264
       nfiles: 2
     - path: config/config.yaml
-      md5: ee66d388426dffdbaae696664ae640b0
-      size: 734
+      md5: 6cba82c1e3a109a1e6e8582aa7e7edc9
+      size: 779
     - path: src/chickenClassifier/components/callbacks.py
       md5: f699aa08be70896e864b85f16ab3a1d5
       size: 944
@@ -73,24 +73,24 @@ stages:
         - 3
     outs:
     - path: artifacts/training/model.h5
-      md5: b9bf561410ee6b76f9eeab8533a13213
-      size: 60541744
+      md5: 39c1c9e31b26f00e3975027a018c4ad5
+      size: 59738928
   evaluation:
     cmd: python src/chickenClassifier/pipeline/stage_04_evaluation.py
     deps:
     - path: artifacts/data_ingestion
-      md5: f87a3d512849211e548d48d8ffd57328.dir
+      md5: 2abb59f83b743d7f29d8ec9479d0e229.dir
       size: 293906097
       nfiles: 8067
     - path: artifacts/training/model.h5
-      md5: b9bf561410ee6b76f9eeab8533a13213
-      size: 60541744
+      md5: 39c1c9e31b26f00e3975027a018c4ad5
+      size: 59738928
     - path: config/config.yaml
-      md5: ee66d388426dffdbaae696664ae640b0
-      size: 734
+      md5: 6cba82c1e3a109a1e6e8582aa7e7edc9
+      size: 779
     - path: src/chickenClassifier/pipeline/stage_04_evaluation.py
-      md5: 2855f1440a3d18993f55a0fe4d89ceff
-      size: 913
+      md5: fcebd4c33d6ca8af7ebe7dcd592eff72
+      size: 912
     params:
       params.yaml:
         BATCH_SIZE: 8
@@ -100,5 +100,5 @@ stages:
         - 3
     outs:
     - path: scores.json
-      md5: e0defa0c09a3f14162d797afdedb730e
-      size: 73
+      md5: ac459c14fbed8dab0d72e8eeaa03e6fc
+      size: 72
